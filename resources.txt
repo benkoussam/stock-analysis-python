@@ -1,0 +1,30 @@
+Resources:
+Mimi Benkoussa
+
+General information:
+Textbook section 23.1 - Information Retrieval
+
+Scraping/Obtaining data using Twitter's API (we ended up not using this, still a good read):
+https://developer.twitter.com/en/docs/tweets/search/overview/standard
+https://developer.twitter.com/en/docs/tweets/search/overview/premium
+
+Allowing for user input (ie demo or one's own .html file):
+https://stackoverflow.com/questions/5563089/raw-input-function-in-python
+
+Parsing with BeautifulSoup:
+https://stackoverflow.com/questions/1501690/parsing-out-data-using-beautifulsoup-in-python
+https://stackoverflow.com/questions/40255128/how-to-parse-the-website-using-beautifulsoup
+
+Wordbank Resources:
+https://stackoverflow.com/questions/4188706/sentiment-analysis-dictionaries
+http://positivewordsresearch.com/sentiment-analysis-resources/
+https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107/blob/08a269765a6b185d5f3dd522c876043ba9628715/data/opinion-lexicon-English/negative-words.txt
+https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107/blob/master/data/opinion-lexicon-English/positive-words.txt
+
+Stock API Resources:
+https://pypi.python.org/pypi/pandas-datareader
+https://ntguardian.wordpress.com/2016/09/19/introduction-stock-market-data-python-1/
+https://pypi.python.org/pypi/yahoo-finance
+
+Connecting stock.py to scraper.py:
+https://stackoverflow.com/questions/1186789/what-is-the-best-way-to-call-a-python-script-from-another-python-script

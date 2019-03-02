@@ -1,0 +1,46 @@
+Discussion Questions:
+Mimi Benkoussa
+
+	1) give a concise summary of what you did for your project, 
+	2) acknowledge all external resources that you used (data, software, etc.), 
+	3) describe your evaluation procedure, and 
+	4) present the results of that evaluation.
+	
+	
+	1) For this project, I created a web scraper (scraper.py) that reads in and obtains 
+	Twitter stock data. The scraper then uses sentiment analysis to predict whether the 
+	stock price has risen or decreased for a given time period. The user can input their 
+	own .html file of Twitter data, or, can use an already-defined demo file, that runs 
+	through tweets for  Bank of America (NYSE:BAC) stock data, from Nov. 1 2017 - 
+	Dec. 11 2017, and outputs the predictions for the given time period. In order to 
+	compare our scraper with some actual stock data, I have modified a Yahoo! Finance
+	stock API (stock.py), which outputs the stock data corresponding to the stock data 
+	from demo.
+	
+	2) Please see resources.txt
+	
+	3) Tweets were analyzed for positive and negative sentiments, using wordbanks that I 
+	defined ourselves. Although generally in sentiment analysis, neutral sentiments are 
+	included, stock prices are rarely "neutral," and so I decided to omit this from our 
+	results. Once the tweets were compared with the positive and negative wordbanks, a 
+	total was calculated (sum of positive and negative sentiments, ie total sentiments), 
+	and whichever sentiment appeared the most led to the prediction for that given stock
+	during the time period.
+	
+	4) In order to compare web scraper predictions, I used a Yahoo! Finance Stock API,
+	and the screenshot results for demo (the NYSE:BAC data) via our web scraper 
+	(scraper.py) in comparison with the output from the API (stock.py) are included 
+	in scraper.png and stock.png, respectively.
+	Some comments about the results:
+		scraper.png - shows that NYSE:BAC from rom Nov. 1 2017 - Dec. 11 2017 was roughly
+		82% positive and 18% negative
+		stock.png - the graph clearly shows a rise in stock prices - from ~$27.40 to 
+		~$28.90 - so a $1.50 increase
+		Ultimately, the results from stock.png concede the predictions, however, the 
+		positive and negative sentiment word bank was user-defined and thus much more 
+		limited. Furthermore, because Twitter is social media, the results might not have 
+		been completely accurate. I believe that if the Twitter and stock results were 
+		both more extreme (ie super positive or super negative), this would be a more 
+		likely outcome, because one is more likely to tweet about/comment on a drastic 
+		change rather than standard stock fluctuations. 
+
