@@ -1,8 +1,6 @@
 # Sentiment Analysis of Twitter Data - Web Scraper
 # Author: Mimi Benkoussa
 
-documented_code.rb linguist-documentation=true
-
 # Import/libraries used
 from __future__ import division
 from bs4 import BeautifulSoup
